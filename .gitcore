@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Odoo runtime / local config (never commit a config with real credentials)
+odoo.conf
+*.session
+filestore/
+sessions/
+*.log
+
+# Docker
+.env
+docker-compose.override.yml
+
+# Database dumps / volumes
+*.sql
+*.dump
+pgdata/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets - real credentials must never be committed (the assessment
+# itself calls this out explicitly for the bank-email bonus feature,
+# but the rule applies everywhere)
+*.pem
+*.key
+secrets/
